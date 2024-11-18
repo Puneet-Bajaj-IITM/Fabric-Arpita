@@ -1,0 +1,13 @@
+*.pt filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+Notebooks/* filter=lfs diff=lfs merge=lfs -text
+models/* filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/models/stitch_detection.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/yolov8m.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/crochet_stitch_detection/crochet_stitch_detection_v37_20241029/weights/best.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/crochet_stitch_detection/crochet_stitch_detection_v37_20241029/weights/last.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/models/stitch_detection.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/yolov8m.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/crochet_stitch_detection/crochet_stitch_detection_v37_20241029/weights/best.pt filter=lfs diff=lfs merge=lfs -text
+C:/Users/Puneet[[:space:]]Bajaj/Desktop/Arpita/Notebooks/Stitch-Detection/crochet_stitch_detection/crochet_stitch_detection_v37_20241029/weights/last.pt filter=lfs diff=lfs merge=lfs -text

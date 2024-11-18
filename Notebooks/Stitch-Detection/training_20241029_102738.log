@@ -1,0 +1,7 @@
+2024-10-29 10:27:38,018 - INFO - Starting YOLO training process...
+2024-10-29 10:27:38,024 - INFO - Created dataset configuration at dataset_config.yaml
+2024-10-29 10:27:39,248 - INFO - Loaded YOLOv8m model
+2024-10-29 10:27:39,267 - INFO - Starting training with parameters:
+2024-10-29 10:27:39,267 - INFO - {'data': 'dataset_config.yaml', 'epochs': 100, 'batch': 16, 'imgsz': 900, 'patience': 20, 'device': 'cuda', 'workers': 4, 'project': 'crochet_stitch_detection', 'name': 'crochet_stitch_detection_v37_20241029', 'exist_ok': True, 'pretrained': True, 'optimizer': 'Adam', 'lr0': 0.001, 'cos_lr': True, 'cache': True, 'mosaic': 1.0, 'degrees': 17.0, 'scale': 0.2, 'flipud': 0.0, 'fliplr': 0.5, 'mixup': 0.0, 'copy_paste': 0.0}
+2024-10-29 11:24:01,322 - INFO - Training completed. Saving results...
+2024-10-29 11:24:05,048 - ERROR - Training failed with error: Parent directory crochet_stitch_detection/weights does not exist.
