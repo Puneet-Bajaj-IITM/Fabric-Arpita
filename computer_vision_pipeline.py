@@ -28,8 +28,21 @@ class StitchDetectionPipeline:
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         model = model.to(device)
         
+            # Load the model's state_dict
+        state_dict = torch.load(defect_model_path)
+        
+        # Load the state_dict into the model
+        incompatible_keys = model.load_state_dict(state_dict)
+        
+        # Log or inspect incompatible keys if needed
+        if incompatible_keys.missing_keys or incompatible_keys.unexpected_keys:
+            print(f"Missing keys: {incompatible_keys.missing_keys}")
+            print(f"Unexpected keys: {incompatible_keys.unexpected_keys}")
+        
+        # Set the defect_detector to the initialized model
+        self.defect_detector = model
+        
         # Initialize new defect detection model (assuming it's a PyTorch model now)
-        self.defect_detector = model.load_state_dict(torch.load(defect_model_path))
         self.defect_detector.eval()  # Set model to evaluation mode
         
         # Initialize logging
