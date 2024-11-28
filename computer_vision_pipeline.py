@@ -20,9 +20,9 @@ class StitchDetectionPipeline:
         # Initialize YOLO models for stitch detection
         self.stitch_detector = YOLO(stitch_model_path)
         
-        # Define the model architecture (same as during training)
-        model = models.mobilenet_v2(weights=None)  # Do not download weights here, we'll load the custom weights
-        model.classifier[1] = nn.Linear(model.classifier[1].in_features, 1)  # Update classifier
+        # Define the model architecture 
+        model = models.mobilenet_v2(weights=None) 
+        model.classifier[1] = nn.Linear(model.classifier[1].in_features, 12)  
         
         # Move the model to the GPU if available
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
